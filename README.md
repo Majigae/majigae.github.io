@@ -1,2 +1,0 @@
-# majigae.github.io
-cv
