@@ -1,0 +1,199 @@
+$font: #ffffff
+$bg: #363636
+$akzent: #9B9BE3
+
+html, body
+	margin: 0
+	padding: 0
+	border: 0
+
+
+body
+	width: 100%
+	max-height: 100%
+	min-height: 950px
+	color: $bg
+	font-family: 'Raleway', sans-serif
+	display: flex
+	flex-flow: row wrap
+	//align-items: center
+	justify-content: center
+	
+	background-color: $bg
+	background-image: -webkit-linear-gradient(10deg, #DADADE 55%, #fff 25%)
+	background-position: fixed
+
+
+	h4
+		font-size: 200%
+		margin: 0
+
+	h2
+		text-transform: uppercase
+		color: $bg
+		font-size: 250%
+		margin: 10px 0
+		letter-spacing: 5px
+		font-weight: bold
+
+	a
+		text-decoration: none
+		color: $bg
+
+	.trennlinie
+		margin: 10px 0 20px 0
+		width: 70px
+		height: 7px
+		background-color: $akzent
+
+	
+	header
+		width: 100%
+		position: fixed
+		top: 0
+		text-align: right
+		max-width: 1500px
+		margin: 10px 10px 10px 0
+
+
+		ul
+			list-style-type: none
+			
+
+			li
+				list-style-type: none
+				display: inline-block
+				padding: 0 15px 0 0
+
+				#menu_button
+					display: none
+
+				a:hover
+					color: $akzent
+
+				.fa
+					font-size: 150%
+					color: $bg
+
+
+
+	.home
+		flex: 1 100%
+		max-width: 1500px
+		text-align: center
+		margin: 50px 5px 0 5px
+
+		img
+			width: 300px
+			height: auto
+			@media screen and (max-width: 600px)
+				width: 40%
+				height: auto
+
+	.about
+		flex: 1 100%
+		max-width: 1480px
+		padding: 20px 10px
+		height: 300px
+		background-color: rgba(255, 255, 255, 0.5)
+		margin: 5px 5px 5px 5px
+		border: 1px solid red
+
+	.education
+		flex: 1 100%
+		max-width: 1480px
+		padding: 20px 10px
+		height: 600px
+		background-color: rgba(255, 255, 255, 0.5)
+		margin: 5px 5px 5px 5px
+		border: 1px solid red
+
+	.skills
+		flex: 1 100%
+		max-width: 1480px
+		padding: 20px 10px
+		height: 600px
+		background-color: rgba(255, 255, 255, 0.5)
+		margin: 5px 5px 5px 5px
+		border: 1px solid red
+
+
+	.contact
+		flex: 1 100%
+		max-width: 1500px
+
+		display: flex
+		flex-direction: row
+		justify-content: center
+
+		@media screen and (max-width: 950px)
+			flex-direction: column
+
+		article
+			flex: 1 100%
+			max-width: 1500px
+			margin: 5px 
+			padding: 30px 10px 0 50px
+			
+
+			.fa
+				color: $bg
+				font-size: 150%
+				opacity: 0.5
+
+			.fa:hover
+				opacity: 1
+
+
+
+			table
+				font-size: 110%
+				font-family: inherit
+				color: $bg
+				margin: 10px 0 0 5px
+				padding: 5px
+
+				tr
+					padding: 0
+
+					td
+						
+						width: 50px
+
+
+
+
+			input
+				border: none
+				border-bottom: 1px solid $bg
+				margin: 10px
+				padding: 5px
+				width: 55%
+				font-size: 110%
+				font-family: inherit
+				background-color: rgba(255, 255, 255, 0)
+
+			input[type="submit"]
+				border: none
+				margin: 10px 0 10px 16%
+				padding: 5px
+				font-size: 110%
+				font-family: inherit
+				width: 25%
+
+			input[type="submit"]:hover
+				font-weight: bold
+
+
+			textarea
+				resize: none
+				border: none
+				border-bottom: 1px solid $bg
+				margin: 10px
+				padding: 5px
+				width: 55%
+				height: 150px
+				font-size: 110%
+				font-family: inherit
+				background-color: rgba(255, 255, 255, 0)
+
