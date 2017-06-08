@@ -1,26 +1,111 @@
-jQuery(document).ready(function($){
-	var timelineBlocks = $('.cd-timeline-block'),
-		offset = 0.8;
-
-	//hide timeline blocks which are outside the viewport
-	hideBlocks(timelineBlocks, offset);
-
-	//on scolling, show/animate timeline blocks when enter the viewport
-	$(window).on('scroll', function(){
-		(!window.requestAnimationFrame) 
-			? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
-			: window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
+$(document).ready(function () {
+	$("#mobile-nav-button").click(function() {
+    	$(".mobile-nav").toggle();
 	});
 
-	function hideBlocks(blocks, offset) {
-		blocks.each(function(){
-			( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
-		});
-	}
+    $("#home-button").on("click", function() {
+        $(".card").fadeIn(500);
+    });
 
-	function showBlocks(blocks, offset) {
-		blocks.each(function(){
-			( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
-		});
-	}
+	$("#about-button").on("click", function() {
+    	$("#photo").fadeIn(600);
+    	$("#grafik-web").hide();
+    	$("#japanese").hide();
+    	$("#about").fadeIn(600);
+    	$("#office").hide();
+
+    	$("#informatik").hide();
+    	$("#get-in-touch").hide();
+    	$("#siemens-pdl").hide();
+    	$("#archery").fadeIn(600);
+    	$("#siemens-trafo").hide();
+
+    	$("#korean").fadeIn(600);
+    	$("#borealis").hide();
+    	$("#contact-form").hide();
+    	$("#has").hide();
+    	$("#html-css").hide();
+	});
+
+	$("#skill-button").on("click", function() {
+		$("#photo").hide();
+    	$("#grafik-web").hide();
+    	$("#japanese").fadeIn(600);
+    	$("#about").hide();
+    	$("#office").fadeIn(600);
+
+    	$("#informatik").hide();
+    	$("#get-in-touch").hide();
+    	$("#siemens-pdl").hide();
+    	$("#archery").hide();
+    	$("#siemens-trafo").hide();
+
+    	$("#korean").hide();
+    	$("#borealis").hide();
+    	$("#contact-form").hide();
+    	$("#has").hide();
+    	$("#html-css").fadeIn(600);
+	});
+
+    $("#education-button").on("click", function() {
+		$("#photo").hide();
+    	$("#grafik-web").fadeIn(600);
+    	$("#japanese").fadeIn(600);
+    	$("#about").hide();
+    	$("#office").hide();
+
+    	$("#informatik").fadeIn(600);
+    	$("#get-in-touch").hide();
+    	$("#siemens-pdl").hide();
+    	$("#archery").hide();
+    	$("#siemens-trafo").hide();
+
+    	$("#korean").hide();
+    	$("#borealis").hide();
+    	$("#contact-form").hide();
+    	$("#has").fadeIn(600);
+    	$("#html-css").hide();
+	});
+
+	$("#work-button").on("click", function() {
+		$("#photo").hide();
+    	$("#grafik-web").hide();
+    	$("#japanese").hide();
+    	$("#about").hide();
+    	$("#office").hide();
+
+    	$("#informatik").hide();
+    	$("#get-in-touch").hide();
+    	$("#siemens-pdl").fadeIn(600);
+    	$("#archery").hide();
+    	$("#siemens-trafo").fadeIn(600);
+
+    	$("#korean").hide();
+    	$("#borealis").fadeIn(600);
+    	$("#contact-form").hide();
+    	$("#has").hide();
+    	$("#html-css").hide();
+	});
+
+	$("#contact-button").on("click", function() {
+		$("#photo").fadeIn(600);
+    	$("#grafik-web").hide();
+    	$("#japanese").hide();
+    	$("#about").hide();
+    	$("#office").hide();
+
+    	$("#informatik").hide();
+    	$("#get-in-touch").fadeIn(600);
+    	$("#siemens-pdl").hide();
+    	$("#archery").hide();
+    	$("#siemens-trafo").hide();
+
+    	$("#korean").hide();
+    	$("#borealis").hide();
+    	$("#contact-form").fadeIn(600);
+    	$("#has").hide();
+    	$("#html-css").hide();
+	});
+
+	
 });
