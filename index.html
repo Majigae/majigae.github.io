@@ -11,48 +11,58 @@
 	<!--Google Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Muli:400,800" rel="stylesheet">  
 
+	<!--Google JQuery 3-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
 
 	<title></title>
 </head>
 <body>
 	<div id="container">
+		<!--################ NAVIGATION ################-->
+		<!--DEFAULT NAVIGATION-->
 		<aside class="default-nav">
 			<ul>
-
-				<li><a href="">// About</a></li>
-				<li><a href="">// Education</a></li>
-				<li><a href="">// Work Experience</a></li>
-				<li><a href="">// Skills</a></li>
-				<li><a href="">// Contact</a></li>
+				<li id="home-button">// Home</li>
+				<li id="about-button">// About</li>
+				<li id="skill-button">// Skills</li>
+				<li id="education-button">// Education</li>
+				<li id="work-button">// Work Experience</li>
+				<li id="contact-button">// Contact</li>
+				<li id="download"><i class="fa fa-download" aria-hidden="true"></i> CV</li>
 			</ul>
 		</aside>
-
+		<!--MOBILE NAVIGATION-->
 		<div id="mobile-nav-button">
 			<ul>
-				<li>Menu</li>
+				<li><i class="fa fa-bars" aria-hidden="true"></i></li>
 			</ul>
 			<div class="mobile-nav">
 				<ul>
-					<li><a href="">Home</a>
-					<li><a href="">About</a></li>
-					<li><a href="">Education</a></li>
-					<li><a href="">Work Experience</a></li>
-					<li><a href="">Skills</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#photo">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#html-css">Skills</a></li>
+					<li><a href="#grafik-web">Education</a></li>
+					<li><a href="#borealis">Work Experience</a></li>
+					<li><a href="#contact-form">Contact</a></li>
 				</ul>
 			</div>
 		</div>
+		<!--################ NAVIGATION END ################-->
 
+		<!--################ CONTENT ################-->
 		<article class="content">
-			<!--1st Row-->
+			<!--### 1st ROW ###-->
 			<div class="inner-content">
-				<div class="card" id="foto">
+				<!--Photo and Name-->
+				<div class="card" id="photo">
 					<div class="overlay">
 						<h3>Mayr Helena</h3>
 					</div>
 				</div>
-				<div class="card">
+				<!--Grafik und Webdesign-->
+				<div class="card default" id="grafik-web">
 					<h4>Grafik- und<br>Webdesign<br>PHP</h4>
 					<div class="info">
 						
@@ -61,39 +71,45 @@
 						<p>since Apr 2017</p>
 					</div>
 				</div>
-				<div class="card" id="japanese">
+				<!--Japanese-->
+				<div class="card default" id="japanese">
 					<h3>Japanese</h3>
 				</div>
-				<div class="card">
+				<!--About-->
+				<div class="card default" id="about">
 					<h3>About</h3>
 					<div class="info">
 						<p>Hi! I'm Helena - 24 years old and living in Linz, Austria.</p>
 					</div>
 				</div>
-				<div class="card" id="skill">
+				<!--MS Office-->
+				<div class="card skill" id="office">
 					<h4>MS-Office</h4>
 					<div class="info">
 						
 					</div>
 				</div>
 			</div>
-			<!--2nd Row-->
+			<!--### 2nd ROW ###-->
 			<div class="inner-content">
-				<div class="card">
+				<!--Informatik-->
+				<div class="card default" id="informatik">
 					<h3>Informatik</h3>
 					<div class="info">
-						
+						<p>I attended one year at the <span>HTL Leonding</span> evening classes
 					</div>
 					<div class="date">
 						<p>Sep 2013 - Jun 2014</p>
 					</div>
 				</div>
-				<div class="card" id="contact">
+				<!--Get in Touch-->
+				<div class="card contact" id="get-in-touch">
 					<h3>Get in touch</h3>
-					<a href=""><i class="fa fa-github-square" aria-hidden="true"></i></a><br>
-					<a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					<a href="https://github.com/Majigae" target="blank"><i class="fa fa-github-square" aria-hidden="true"></i></a><br>
+					<a href="https://linkedin.com/in/helena-mayr-28a816144" target="blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 				</div>
-				<div class="card">
+				<!--Siemens PDL-->
+				<div class="card default" id="siemens-pdl">
 					<h4>Siemens Personal<br>dienstleistungen</h4>
 					<div class="info">
 						
@@ -102,31 +118,36 @@
 						<p>May 2011 - Dec 2015
 					</div>
 				</div>
-				<div class="card" id="contact"> 
+				<!--Archery-->
+				<div class="card contact" id="archery"> 
 					<h3>Archery</h3>
 					<div class="info">
 						<p></p>
 					</div>
 				</div>
-				<div class="card" >
+				<!--Simenes Trafo-->
+				<div class="card default" id="siemens-trafo">
 					<h4>Siemens Transformers Austria</h4>
 					<div class="info">
-						
+						<p>My first <span>real</span> work experience.</p>
 					</div>
 					<div class="date">
 						<p>Oct 2010 - Dec 2010</p>
 					</div>
 				</div>
 			</div>
-			<!--3rd Row-->
+			<!--### 3rd ROW ###-->
 			<div class="inner-content">
+				<!--Korean-->
 				<div class="card" id="korean">
 					<h3>Korean</h3>
 					<div class="info">
-						<p>Do you believe me that I'm half-korean?</p>
+						<p>Half-Korean and proud of it.</p>
+						<p>My language skills are not so good - but I'm getting into it.</p>
 					</div>
 				</div>
-				<div class="card">
+				<!--Borealis-->
+				<div class="card default" id="borealis">
 					<h4>Borealis Agrolinz Melamine</h4>
 					<div class="info">
 						
@@ -135,7 +156,8 @@
 						<p>Mar 2016 - Mar 2017</p>
 					</div>
 				</div>
-				<div class="card" id="contact">
+				<!--Contact Form-->
+				<div class="card contact" id="contact-form">
 					<form>
 					<input type="text" name="name" placeholder="Name"><br>
 					<input type="email" name="email" placeholder="Email"><br>
@@ -143,7 +165,8 @@
 					<input type="submit" name="submit" value="Contact">
 					</form>
 				</div>
-				<div class="card">
+				<!--Office Management-->
+				<div class="card default" id="has">
 					<h4>Office Management</h4>
 					<div class="info">
 						
@@ -152,7 +175,8 @@
 						<p>Sep 2007 - Jun 2010</p>
 					</div>
 				</div>
-				<div class="card" id="skill">
+				<!--HTML & CSS-->
+				<div class="card skill" id="html-css">
 					<h4>HTML & CSS</h4>
 					<div class="info">
 						
@@ -160,6 +184,9 @@
 				</div>
 			</div>
 		</article>
+		<!--################ CONTENT END ################-->
 	</div>
+
+
 </body>
 </html>
