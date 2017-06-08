@@ -1,199 +1,279 @@
-$font: #ffffff
-$bg: #363636
-$akzent: #9B9BE3
-
 html, body
 	margin: 0
 	padding: 0
 	border: 0
 
-
 body
+	//background-color: lightgrey
+	//background-color: rgba(4, 180, 134, 0.7)
+	height: 100%
 	width: 100%
-	max-height: 100%
-	min-height: 950px
-	color: $bg
-	font-family: 'Raleway', sans-serif
-	display: flex
-	flex-flow: row wrap
-	//align-items: center
-	justify-content: center
+	font-family: 'Muli', 'Arial', sans-serif
+	color: #424242
+
+	.fa 
+		font-size: 300%
+		margin: 15px 0 60px 20px
+
+	.fa:hover
+		color: #D8D8D8
 	
-	background-color: $bg
-	background-image: -webkit-linear-gradient(10deg, #DADADE 55%, #fff 25%)
-	background-position: fixed
-
-
-	h4
-		font-size: 200%
-		margin: 0
-
-	h2
-		text-transform: uppercase
-		color: $bg
-		font-size: 250%
-		margin: 10px 0
-		letter-spacing: 5px
-		font-weight: bold
-
 	a
-		text-decoration: none
-		color: $bg
-
-	.trennlinie
-		margin: 10px 0 20px 0
-		width: 70px
-		height: 7px
-		background-color: $akzent
-
-	
-	header
-		width: 100%
-		position: fixed
-		top: 0
-		text-align: right
-		max-width: 1500px
-		margin: 10px 10px 10px 0
+		color: #424242
 
 
-		ul
-			list-style-type: none
-			
-
-			li
-				list-style-type: none
-				display: inline-block
-				padding: 0 15px 0 0
-
-				#menu_button
-					display: none
-
-				a:hover
-					color: $akzent
-
-				.fa
-					font-size: 150%
-					color: $bg
-
-
-
-	.home
-		flex: 1 100%
-		max-width: 1500px
-		text-align: center
-		margin: 50px 5px 0 5px
-
-		img
-			width: 300px
-			height: auto
-			@media screen and (max-width: 600px)
-				width: 40%
-				height: auto
-
-	.about
-		flex: 1 100%
-		max-width: 1480px
-		padding: 20px 10px
-		height: 300px
-		background-color: rgba(255, 255, 255, 0.5)
-		margin: 5px 5px 5px 5px
-		border: 1px solid red
-
-	.education
-		flex: 1 100%
-		max-width: 1480px
-		padding: 20px 10px
-		height: 600px
-		background-color: rgba(255, 255, 255, 0.5)
-		margin: 5px 5px 5px 5px
-		border: 1px solid red
-
-	.skills
-		flex: 1 100%
-		max-width: 1480px
-		padding: 20px 10px
-		height: 600px
-		background-color: rgba(255, 255, 255, 0.5)
-		margin: 5px 5px 5px 5px
-		border: 1px solid red
-
-
-	.contact
-		flex: 1 100%
-		max-width: 1500px
-
+	#container
+		margin: 15px
+		//height: 100%
 		display: flex
-		flex-direction: row
+		flex-flow: row wrap
 		justify-content: center
+		position: relative
 
-		@media screen and (max-width: 950px)
-			flex-direction: column
+		.content
+			flex: 3 1 0%
+			//background-color: #fff
+			min-height: 900px
+			margin: 0 5px
+			padding: 15px
 
-		article
-			flex: 1 100%
-			max-width: 1500px
-			margin: 5px 
-			padding: 30px 10px 0 50px
-			
+			display: flex
+			flex-flow: row wrap
+			justify-content: center
+			max-width: 850px
 
-			.fa
-				color: $bg
-				font-size: 150%
-				opacity: 0.5
+			.inner-content
+				flex: 1 1 0%
 
-			.fa:hover
-				opacity: 1
+				display: flex
+				flex-flow: column
 
+				//--Card Design--//
+				#contact
+					background-color: #a074a0
 
+				#korean
+					background-image: url("../img/korean_bg.png")
+					background-repeat: no-repeat
+					background-position: center
+					background-size: 105%
 
-			table
-				font-size: 110%
-				font-family: inherit
-				color: $bg
-				margin: 10px 0 0 5px
-				padding: 5px
+				#japanese
+					background-image: url("../img/japanese_bg.png")
+					background-repeat: no-repeat
+					background-position: center
+					background-size: 105%
 
-				tr
-					padding: 0
+				#skill
+					background-color: #FFEED6
 
-					td
+				#korean, #japanese, #skill
+					h3, h4
+						color: #424242
+
+				#foto
+					background-image: url("../pic/foto.jpg")
+					background-repeat: no-repeat
+					background-position: center
+					background-size: 120%
+
+					.overlay
+						position: absolute
+						top: 0
+						left: 0
+						height: 100%
+						width: 100%
+						background-color: rgba(255, 255, 255, 0.3)
+						z-index: 70
+
+					h3
+						color: #a074a0
+
+				#foto:hover
+					.overlay
+						background-color: rgba(255, 255, 255, 0)
+
 						
-						width: 50px
+
+
+				.card
+					flex: 1 100%
+					max-height: 300px
+					min-height: 300px
+					max-width: 230px
+					min-width: 230px
+					background-color: #fff
+					box-shadow: 4px 5px 4px #aaa
+					//border: 1px solid #aaa
+					padding: 15px
+					margin: 7px
+					position: relative
+
+					display: flex
+					flex-flow: column
+
+					h3
+						color: #D8D8D8
+						text-transform: uppercase
+						position: absolute
+						right: 10px
+						bottom: -15px
+						font-size: 200%
+						letter-spacing: 2px
+						font-weight: 800
+						text-align: right
+						z-index: 82
+
+					h4
+						color: #D8D8D8
+						text-transform: uppercase
+						position: absolute
+						right: 10px
+						bottom: -15px
+						font-size: 130%
+						letter-spacing: 2px
+						font-weight: 800
+						text-align: right
+						z-index: 80
+
+					input, textarea
+						background-color: rgba(255, 255, 255, 0)
+						border: none
+						border-bottom: 1px solid #D8D8D8
+						width: 95%
+						margin: 5px 0 10px 0
+						padding: 5px
+						font-family: inherit
+
+					textarea
+						font-size: 85%
+						resize: none
+						height: 100px
+
+					input[type="submit"]
+						border: none
+						color: #D8D8D8
+						text-transform: uppercase
+						position: absolute
+						right: 5px
+						bottom: 2px
+						font-size: 200%
+						letter-spacing: 2px
+						font-weight: 800
+						text-align: right
+						z-index: 80
+					input[type="submit"]:hover
+						cursor: pointer
+						color: #424242
+
+					.info
+						flex: 1 100%
+
+						line-height: 140%
+						text-align: justify
+						transition: .5s ease
+						margin-top: 10px
+						font-size: 105%
+
+					.date
+						flex: 1 100%
+						text-align: right
+						margin-top: 40px
+						color: #a074a0		
 
 
 
 
-			input
-				border: none
-				border-bottom: 1px solid $bg
+
+			.inner-content:nth-child(2)
+				margin: 20px 0 0 0
+
+		//----Navigation----//
+		.default-nav
+			flex: 1 1 0%
+			//display: block
+			background-color: #fff
+			height: auto
+			//min-height: 850px
+			max-width: 250px
+			//box-shadow: 4px 5px 5px #aaa
+			//border: 2px solid #ddd
+			margin: -20px 5px
+			padding: 5px
+			position: relative
+
+			ul
+				position: fixed
+				top: 25%
 				margin: 10px
-				padding: 5px
-				width: 55%
-				font-size: 110%
-				font-family: inherit
-				background-color: rgba(255, 255, 255, 0)
+				padding: 10px
+				list-style-type: none
 
-			input[type="submit"]
-				border: none
-				margin: 10px 0 10px 16%
-				padding: 5px
-				font-size: 110%
-				font-family: inherit
-				width: 25%
+				li
+					display: block
+					padding: 0 0 20px 0
+					width: 100%
+					transition: .2s ease
 
-			input[type="submit"]:hover
-				font-weight: bold
+					a
+						text-decoration: none
+						color: #424242
+						letter-spacing: 1px
+						font-size: 115%
+		
+				li:first-child
+					padding: 50px 0 20px 0
+				li:last-child
+					padding: 80px 0 30px 0
 
+				li:hover, li:active
+					padding-left: 10px
 
-			textarea
-				resize: none
-				border: none
-				border-bottom: 1px solid $bg
-				margin: 10px
-				padding: 5px
-				width: 55%
-				height: 150px
-				font-size: 110%
-				font-family: inherit
-				background-color: rgba(255, 255, 255, 0)
+			ul:before
+				position: absolute
+				content: ''
+				width: 0
+				height: 100%
+				border: 1px solid #C8A2C8
+				left: -30px
+
+			@media screen and (max-width: 950px)
+				display: none
+
+		#mobile-nav-button
+			flex: 1 100%
+			display: none
+			margin: -15px -15px 10px -15px
+			padding: 5px
+			background-color: #fff
+
+			ul
+				margin: 0
+				padding: 0
+				text-align: center
+
+				li
+					padding: 4px
+					list-style-type: none
+					color: #424242
+					letter-spacing: 1px
+					font-size: 115%
+
+					a
+						text-decoration: none
+						color: #424242
+
+			@media screen and (max-width: 950px)
+				display: block
+
+			.mobile-nav
+				flex: 1 100%
+				height: auto
+				display: none
+				margin: -15px
+				background-color: #fff
+
+				
+
+		
 
